@@ -23,7 +23,9 @@ body{
     display: flex;
     top: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    /* fixed定位的一定要设定宽度 */
     width: 100%;
     max-width: 540px;
     min-width: 320px;
@@ -33,23 +35,20 @@ body{
 }
 
 .search{
-    position: relative;
-    flex: 4 1 auto;
+    flex: 1;
     background-color: pink;
 }
 
-.login{
-    flex: 1 1 auto;
+.user{
+    width: 44px;
+    height: 100%;
     background-color: purple;
 }
 
-input{
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    border: 1px solid #bebebe;
-    border-radius: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+.user::before{
+
+}
+
+.user::after{
+    
 }
