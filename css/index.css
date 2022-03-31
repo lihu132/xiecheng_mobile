@@ -42,13 +42,19 @@ body{
 .user{
     width: 44px;
     height: 100%;
-    background-color: purple;
+    text-align: center;
 }
 
 .user::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/user.png) no-repeat;
+    background-size: contain;
 
 }
 
-.user::after{
-    
-}
