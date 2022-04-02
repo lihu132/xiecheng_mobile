@@ -126,7 +126,7 @@ body {
     font-size: 12px;
 }
 
-.local-nav-icon {
+.local-nav li [class^="local-nav-icon"] {
     width: 32px;
     height: 32px;
     background: url(../images/localnav_bg.png) no-repeat 0 0;
@@ -134,53 +134,18 @@ body {
     margin-top: 8px;
 }
 
-.local-nav li:nth-child(2) a .local-nav-icon {
-    background: url(../images/localnav_bg.png) no-repeat 0 -32px;
-    background-size: 32px 160px;
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
 }
 
-.local-nav li:nth-child(3) a .local-nav-icon {
-    background: url(../images/localnav_bg.png) no-repeat 0 -64px;
-    background-size: 32px 160px;
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
 }
 
-.local-nav li:nth-child(4) a .local-nav-icon {
-    background: url(../images/localnav_bg.png) no-repeat 0 -96px;
-    background-size: 32px 160px;
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
 }
 
-.local-nav li:nth-child(5) a .local-nav-icon {
-    background: url(../images/localnav_bg.png) no-repeat 0 -128px;
-    background-size: 32px 160px;
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
 }
-
-
-/* .local-nav li a::before {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background: url(../images/localnav_bg.png) no-repeat 0 0;
-    background-size: 32px 160px;
-    margin: 5px auto 0;
-}
-
-.local-nav li:nth-child(2) a::before {
-    background: url(../images/localnav_bg.png) no-repeat 0px -32px;
-    background-size: 32px 160px;
-}
-
-.local-nav li:nth-child(3) a::before {
-    background: url(../images/localnav_bg.png) no-repeat 0px -64px;
-    background-size: 32px 160px;
-}
-
-.local-nav li:nth-child(4) a::before {
-    background: url(../images/localnav_bg.png) no-repeat 0px -96px;
-    background-size: 32px 160px;
-}
-
-.local-nav li:nth-child(5) a::before {
-    background: url(../images/localnav_bg.png) no-repeat 0px -128px;
-    background-size: 32px 160px;
-} */
