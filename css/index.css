@@ -1,23 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
+    color: #222;
 }
 
-li{
+ul {
     list-style: none;
 }
 
 
-body{
+body {
     max-width: 540px;
     min-width: 320px;
     margin: 0 auto;
-    font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei", STXiHei, hei;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXiHei, hei;
     color: #000;
     background-color: #f2f2f2;
     overflow-x: hidden;
@@ -27,7 +28,7 @@ body{
 
 
 /* 顶部搜索模块 */
-.search-index{
+.search-index {
     position: fixed;
     display: flex;
     top: 0;
@@ -45,7 +46,7 @@ body{
     border-bottom: 1px solid #ccc;
 }
 
-.search{
+.search {
     position: relative;
     flex: 1;
     height: 26px;
@@ -59,7 +60,7 @@ body{
     color: #666;
 }
 
-.search::before{
+.search::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -71,7 +72,7 @@ body{
 }
 
 
-.user{
+.user {
     width: 44px;
     height: 100%;
     text-align: center;
@@ -80,7 +81,7 @@ body{
     margin-top: -3px;
 }
 
-.user::before{
+.user::before {
     content: '';
     display: block;
     width: 23px;
@@ -93,41 +94,68 @@ body{
 
 /* 焦点图 */
 
-.focus{
+.focus {
     padding-top: 44px;
     width: 100%;
-}  
+}
 
-.focus img{
+.focus img {
     width: 100%;
 }
 
 
 /* 局部导航栏 */
-.local-nav{
+.local-nav {
     margin: 3px 4px;
     height: 64px;
     border-radius: 8px;
     background-color: #fff;
-}
-
-.local-nav ul{
     display: flex;
     flex-flow: row nowrap;
-    height: 100%;
 }
 
-.local-nav ul li{
+
+.local-nav li {
     flex: 1 1 auto;
 }
 
-.local-nav ul li a{
-    display: block;
-    height: 50px;
-    text-align: center;
+.local-nav li a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 12px;
 }
 
-.local-nav ul li a::before{
+.local-nav-icon {
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+    margin-top: 8px;
+}
+
+.local-nav li:nth-child(2) a .local-nav-icon {
+    background: url(../images/localnav_bg.png) no-repeat 0 -32px;
+    background-size: 32px 160px;
+}
+
+.local-nav li:nth-child(3) a .local-nav-icon {
+    background: url(../images/localnav_bg.png) no-repeat 0 -64px;
+    background-size: 32px 160px;
+}
+
+.local-nav li:nth-child(4) a .local-nav-icon {
+    background: url(../images/localnav_bg.png) no-repeat 0 -96px;
+    background-size: 32px 160px;
+}
+
+.local-nav li:nth-child(5) a .local-nav-icon {
+    background: url(../images/localnav_bg.png) no-repeat 0 -128px;
+    background-size: 32px 160px;
+}
+
+
+/* .local-nav li a::before {
     content: '';
     display: block;
     width: 32px;
@@ -137,22 +165,22 @@ body{
     margin: 5px auto 0;
 }
 
-.local-nav ul li:nth-child(2) a::before{
+.local-nav li:nth-child(2) a::before {
     background: url(../images/localnav_bg.png) no-repeat 0px -32px;
     background-size: 32px 160px;
 }
 
-.local-nav ul li:nth-child(3) a::before{
+.local-nav li:nth-child(3) a::before {
     background: url(../images/localnav_bg.png) no-repeat 0px -64px;
     background-size: 32px 160px;
 }
 
-.local-nav ul li:nth-child(4) a::before{
+.local-nav li:nth-child(4) a::before {
     background: url(../images/localnav_bg.png) no-repeat 0px -96px;
     background-size: 32px 160px;
 }
 
-.local-nav ul li:nth-child(5) a::before{
+.local-nav li:nth-child(5) a::before {
     background: url(../images/localnav_bg.png) no-repeat 0px -128px;
     background-size: 32px 160px;
-}
+} */
