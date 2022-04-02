@@ -149,3 +149,53 @@ body {
 .local-nav li .local-nav-icon-icon5 {
     background-position: 0 -128px;
 }
+
+/* 主导航栏 */
+nav {
+    margin: 0 4px 3px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    /* 背景渐变必须添加浏览器私有前缀 */
+    background: -webkit-linear-gradient(left, red, blue);
+    flex-flow: row nowrap;
+}
+
+nav .nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+
+.nav-common .nav-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    /* 文字阴影 */
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items:nth-child(1) a {
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+.nav-items a:nth-child(2) {
+    border-top: 1px solid #fff;
+}
+
+/* -n+2就是前面两个元素 */
+.nav-common .nav-items:nth-child(-n+2) {
+    border-right: 1px solid #fff;
+}
