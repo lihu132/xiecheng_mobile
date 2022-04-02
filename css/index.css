@@ -160,10 +160,24 @@ nav {
 .nav-common {
     display: flex;
     height: 88px;
-    /* 背景渐变必须添加浏览器私有前缀 */
-    background: -webkit-linear-gradient(left, red, blue);
     flex-flow: row nowrap;
 }
+
+.nav-common:nth-child(1) {
+    /* 背景渐变必须添加浏览器私有前缀 */
+    background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+
+.nav-common:nth-child(2) {
+    /* 背景渐变必须添加浏览器私有前缀 */
+    background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+
+.nav-common:nth-child(3) {
+    /* 背景渐变必须添加浏览器私有前缀 */
+    background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
 
 nav .nav-common:nth-child(2) {
     margin: 3px 0;
