@@ -23,7 +23,7 @@ body {
     background-color: #f2f2f2;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-
+    height: 2000px;
 }
 
 
@@ -212,4 +212,70 @@ nav .nav-common:nth-child(2) {
 /* -n+2就是前面两个元素 */
 .nav-common .nav-items:nth-child(-n+2) {
     border-right: 1px solid #fff;
+}
+
+/* 侧导航栏 */
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    flex-flow: row wrap;
+    padding: 5px 0;
+}
+
+.subnav-entry li {
+    /* 里面的子盒子可以写%，相对于父级来说的 */
+    flex: 20%;
+}
+
+.subnav-entry li a {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.subnav-entry li a [class^="subnav-entry-icon"] {
+    width: 28px;
+    height: 28px;
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+    background-size: 28px auto;
+    margin-top: 4px;
+}
+
+
+.subnav-entry li a .subnav-entry-icon-icon2 {
+    background-position: 0 -30px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon3 {
+    background-position: 0 -62px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon4 {
+    background-position: 0 -95px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon5 {
+    background-position: 0 -130px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon6 {
+    background-position: 0 -162px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon7 {
+    background-position: 0 -194px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon8 {
+    background-position: 0 -226px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon9 {
+    background-position: 0 -258px;
+}
+
+.subnav-entry li a .subnav-entry-icon-icon10 {
+    background-position: 0 -290px;
 }
