@@ -222,6 +222,7 @@ nav .nav-common:nth-child(2) {
     margin: 0 4px;
     flex-flow: row wrap;
     padding: 5px 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
 }
 
 .subnav-entry li {
@@ -278,4 +279,78 @@ nav .nav-common:nth-child(2) {
 
 .subnav-entry li a .subnav-entry-icon-icon10 {
     background-position: 0 -290px;
+}
+
+
+/* 销售模块 */
+.sales-box {
+    background-color: #fff;
+    border-top: 1px solid #bbb;
+    margin: 4px;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    content: '';
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+
+.sales-hd .more {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    line-height: 20px;
+    background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #fff;
+}
+
+.sales-hd .more::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotateZ(45deg);
+}
+
+.sales-bd .row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+
+.row a:first-child {
+    border-right: 1px solid #eee;
+}
+
+.row a img {
+    width: 100%;
 }
